@@ -1,0 +1,106 @@
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*/ variables /*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to Bottom, slateGrey, lightSlateGrey);
+}
+
+.tetris {
+  flex-grow: 0;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(to Bottom, SeaShell, Ivory);
+  display: grid;
+  grid-template-columns: repeat(8, [col] 1fr);
+  grid-template-rows: repeat(12, [row] 1fr);
+  border: 5px solid whiteSmoke;
+}
+
+.tetris .cube {
+  grid-column: col 7 / col 9;
+  grid-row: row 11 / row 13;
+  background: linear-gradient(to Bottom, darkRed, FireBrick);
+}
+
+.tetris .tube {
+  grid-column: col 6 / col 7;
+  grid-row: row 10 / row 13;
+  background: linear-gradient(to Bottom, SkyBlue, LightSkyBlue);
+}
+
+.tetris .el-one {
+  grid-column: col 4 / col 6;
+  grid-row: row 12 / row 13;
+  background: linear-gradient(to Bottom, tomato, coral);
+}
+
+.tetris .el-two {
+  grid-column: col 4 / col 5;
+  grid-row: row 10 / row 12;
+  background: linear-gradient(to Bottom, coral, tomato);
+}
+
+.tetris .arrow-one {
+  grid-column: col 1 / col 4;
+  grid-row: row 12 / row 13;
+  background: black;
+}
+
+.tetris .arrow-two {
+  grid-column: col 2 / col 3;
+  grid-row: row 11 / row 12;
+  background: linear-gradient(to Bottom, green, ForestGreen);
+}
+
+.tetris .purple {
+  grid-column: col 8 / col 9;
+  grid-row: row 8 / row 10;
+  background: linear-gradient(to Bottom, Plum, Thistle);
+}
+
+.tetris .purple-two {
+  grid-column: col 7 / col 9;
+  grid-row: row 10 / row 11;
+  background: linear-gradient(to Bottom, Thistle, Plum);
+}
+
+.tetris .tube-sandy {
+  grid-column: col 3 / col 4;
+  grid-row: row 9 / row 12;
+  background: linear-gradient(to top, Pink, LightPink);
+}
+
+.tetris .arrow-down {
+  grid-column: col 5 / col 6;
+  grid-row: row 4 / row 6;
+  background: linear-gradient(to right, #e46d18, Chocolate);
+}
+
+.tetris .arrow-down-two {
+  grid-column: col 6 / col 7;
+  grid-row: row 5 / row 7;
+  background: linear-gradient(to right, Chocolate, #e46d18);
+}
+
+.tetris .arrow-first-down {
+  grid-column: col 2 / col 3;
+  grid-row: row 2 / row 3;
+  background: linear-gradient(to top, DimGrey, grey);
+}
+
+.tetris .arrow-first-down-two {
+  grid-column: col 1 / col 4;
+  grid-row: row 1 / row 2;
+  background: linear-gradient(to bottom, DimGrey, grey);
+}
